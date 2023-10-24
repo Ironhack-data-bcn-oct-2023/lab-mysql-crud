@@ -1,0 +1,3 @@
+
+DELETE FROM CARS
+WHERE id=5;
