@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS customers (
 CREATE TABLE IF NOT EXISTS invoices ( 
 	invoice_id INT AUTO_INCREMENT PRIMARY KEY, 
     date DATE, 
-    car INT,
+    car VARCHAR (80),
     salesperson INT, 
     customer INT);
     
@@ -46,4 +46,9 @@ ALTER TABLE invoices
     REFERENCES salespeople (staff_id)
     ON DELETE CASCADE; 
     
+ALTER TABLE invoices 
+	ADD FOREIGN KEY (car)
+    REFERENCES cars (vin)
+    ON DELETE CASCADE;
+
 
