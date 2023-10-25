@@ -1,5 +1,7 @@
 USE car_company;
 
+SET sql_safe_updates = 0;
+
 UPDATE salesperson
 SET store = 'Miami'
 WHERE staff_id = 105;

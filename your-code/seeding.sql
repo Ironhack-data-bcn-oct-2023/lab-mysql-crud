@@ -7,7 +7,7 @@ INSERT INTO car (vin, manufacturer, model, color, year) VALUES
 	('RKXVNNIHLVVZOUB4M', 'Ford', 'Fusion', 'White', 2019),
 	('HKNDGS7CU31E9Z7JW', 'Toyota', 'RAV4', 'Silver', 2019),
 	('DAM41UDN3CHU2JVF6', 'Volvo', 'V60', 'Gray', 2019),
-	('DAM41UDN3CHU2KVF6', 'Volvo', 'V60 Cross Country', 'Gray', 2019);
+	('DAM41UDN3CHU2JVF6', 'Volvo', 'V60 Cross Country', 'Gray', 2019);
 
 -- Insert data to customer table
 INSERT INTO customer (customer_id, full_name, phone, email, address, city, state, country, zip_code) VALUES
@@ -28,8 +28,8 @@ INSERT INTO salesperson (staff_id, store_id, full_name, store) VALUES
        
 -- Insert to invoices table
 INSERT INTO invoices (invoice_num, date, staff_id, car, customer) VALUES
-    (852399038, '2018-08-22', 101, '3K096I98581DHSNUP', 10001),
-    (731166526, '2018-12-31', 104, 'ZM8G7BEUQZ97IH46V', 30001),
-    (271135104, '2019-01-22', 103, 'RKXVNNIHLVVZOUB4M', 20001);
+    (852399038, '2018-08-22', 3, '1', 1),
+    (731166526, '2018-12-31', 7, '2', 3),
+    (271135104, '2019-01-22', 5, '3', 2);
     
-SELECT*FROM car;
+SELECT*FROM customer;
