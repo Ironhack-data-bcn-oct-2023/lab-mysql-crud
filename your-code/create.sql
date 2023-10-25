@@ -3,7 +3,7 @@ create database if not exists CAR_LAB;
 use CAR_LAB;
 CREATE TABLE IF NOT EXISTS CARS (
 	id INT AUTO_INCREMENT PRIMARY KEY, 
-    vin VARCHAR(17) NOT NULL UNIQUE, 
+    vin VARCHAR(17) NOT NULL, -- Was using UNIQUE but wasn't workign due to the duplica in the seeding 
     manufacturer VARCHAR(60),
     model VARCHAR(60),
     year YEAR,

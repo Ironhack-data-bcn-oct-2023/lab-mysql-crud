@@ -24,8 +24,8 @@ INSERT INTO salespersons (staff_id,name,store) VALUES
 (8, "Shonda Leer", "São Paulo");
 
 INSERT INTO invoices (invoice_id, date, car_id,customer_id, salesperson_id) VALUES
-(852399039,"2018-08-22", 0, 1,3),
-(731166526, "2018-12-31", 3, 0, 5),
+(852399039,"2018-08-22", 1, 2,3),
+(731166526, "2018-12-31", 3, 1, 5),
 (271135104, "2019-01-22", 2, 2, 7);
 
 
